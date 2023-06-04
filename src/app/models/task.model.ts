@@ -1,5 +1,5 @@
 interface _Task {
-    _id: string;
+    _id?: string;
     title: string;
     description: string;
     status: string;
@@ -11,7 +11,7 @@ export class Task {
         public title: string,
         public description: string,
         public status: string,
-        public _id?: string,
+        public id?: string,
     ) {}
 
 }

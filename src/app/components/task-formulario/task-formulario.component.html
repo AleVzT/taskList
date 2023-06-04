@@ -1,0 +1,16 @@
+<div class="row">
+  <form [formGroup]="formuTask" autocomplete="off" class="col s12">
+    <div class="input-field col s12">
+      <input type="text" id="title" formControlName="title" />
+      <label for="title">Titulo</label>
+    </div>
+    <div class="input-field col s12">
+      <textarea id="description" formControlName="description" class="materialize-textarea"></textarea>
+      <label for="description">Descripción</label>
+    </div>
+    <div class="input-field col s12 center-align">
+      <button class="waves-effect red darken-4 btn" style="margin-right: 10px;" (click)="limpiarFormulario()">{{selectTask.id ? 'Nuevo' : 'Limpiar'}}</button>
+      <button class="waves-effect red darken-4 btn" (click)="enviarFormulario()">Enviar</button>
+    </div>
+  </form>
+</div>
